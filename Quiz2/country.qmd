@@ -1,0 +1,32 @@
+---
+title: "Country Analysis"
+---
+
+This page analyzes changes in life expectancy, GDP per capita, and population for the United States over time. 
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+gapminder = pd.read_csv("/Users/riakrishna/Desktop/EmoryJuniorFall/QTM350/qtm350-quiz02/gapminder.csv")
+gapminder
+
+
+
+unitedstates = gapminder[gapminder['country'] == "United States"]
+plt.scatter(unitedstates['year'], unitedstates['life_expectancy'])
+plt.xlabel('Year')
+plt.ylabel('Life Expectancy')
+plt.title("Life Expectancy in the United States over Time")
+plt.figure()
+
+plt.scatter(unitedstates['year'], unitedstates['gdp_per_capita'])
+plt.xlabel('Year')
+plt.ylabel('GDP Per Capita')
+plt.title("GDP Per Capita in the United States over Time")
+plt.figure()
+
+plt.scatter(unitedstates['year'], unitedstates['population_millions'])
+plt.xlabel('Year')
+plt.ylabel("Population in Millions")
+plt.title("Population in Millions in the United States over Time")
+plt.figure()
+```

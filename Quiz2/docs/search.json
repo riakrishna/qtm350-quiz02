@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "life-population.html",
+    "href": "life-population.html",
+    "title": "Life Expectancy and Population",
+    "section": "",
+    "text": "This page analyzes the relationship between life expectancy and population\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\ngapminder = pd.read_csv(\"/Users/riakrishna/Desktop/EmoryJuniorFall/QTM350/qtm350-quiz02/gapminder.csv\")\ngapminder\n\nlife_expectancy = gapminder['life_expectancy']\npopulation = gapminder['population_millions']\n\nplt.scatter(life_expectancy, population)\nplt.xlabel('Life Expectancy')\nplt.ylabel('Population')\n\nText(0, 0.5, 'Population')"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "This is the home page. The gapminder dataset shows the life expectancy, GDP per capita, and population for 142 countries.\nTo learn about life expectancy and GDP per capita, visit: Life Expectancy and GDP Per Capita\nTo learn about life expectancy and population, visit: Life Expectancy and Population\nTo see the country analysis, vist: Country Analysis"
+  },
+  {
+    "objectID": "country.html",
+    "href": "country.html",
+    "title": "Country Analysis",
+    "section": "",
+    "text": "This page analyzes changes in life expectancy, GDP per capita, and population for the United States over time.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\ngapminder = pd.read_csv(\"/Users/riakrishna/Desktop/EmoryJuniorFall/QTM350/qtm350-quiz02/gapminder.csv\")\ngapminder\n\n\n\nunitedstates = gapminder[gapminder['country'] == \"United States\"]\nplt.scatter(unitedstates['year'], unitedstates['life_expectancy'])\nplt.xlabel('Year')\nplt.ylabel('Life Expectancy')\nplt.title(\"Life Expectancy in the United States over Time\")\nplt.figure()\n\nplt.scatter(unitedstates['year'], unitedstates['gdp_per_capita'])\nplt.xlabel('Year')\nplt.ylabel('GDP Per Capita')\nplt.title(\"GDP Per Capita in the United States over Time\")\nplt.figure()\n\nplt.scatter(unitedstates['year'], unitedstates['population_millions'])\nplt.xlabel('Year')\nplt.ylabel(\"Population in Millions\")\nplt.title(\"Population in Millions in the United States over Time\")\nplt.figure()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;Figure size 672x480 with 0 Axes&gt;"
+  },
+  {
+    "objectID": "life-gdp.html",
+    "href": "life-gdp.html",
+    "title": "Life Expectancy and GDP per Capita",
+    "section": "",
+    "text": "This page analyzes the relationship between life expectancy and GDP per Capita.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\ngapminder = pd.read_csv(\"/Users/riakrishna/Desktop/EmoryJuniorFall/QTM350/qtm350-quiz02/gapminder.csv\")\ngapminder\n\nlife_expectancy = gapminder['life_expectancy']\ngdp = gapminder['gdp_per_capita']\n\nplt.scatter(life_expectancy, gdp)\nplt.xlabel('Life Expectancy')\nplt.ylabel('GDP Per Capita')\n\nText(0, 0.5, 'GDP Per Capita')"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]

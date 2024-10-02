@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Quiz 2"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - href: life-gdp.qmd
+        text: Life Expectancy and GDP
+      - href: life-population.qmd
+        text: Life Expectancy and Population
+      - href: country.qmd
+        text: Country Analysis
+        
+    
+
+
+format:
+  html:
+    theme: pulse
+    css: styles.css
+    toc: true
+
+
+

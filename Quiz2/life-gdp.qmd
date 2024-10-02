@@ -1,0 +1,21 @@
+---
+title: "Life Expectancy and GDP per Capita"
+---
+
+This page analyzes the relationship between life expectancy and GDP per Capita.
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+gapminder = pd.read_csv("/Users/riakrishna/Desktop/EmoryJuniorFall/QTM350/qtm350-quiz02/gapminder.csv")
+gapminder
+
+life_expectancy = gapminder['life_expectancy']
+gdp = gapminder['gdp_per_capita']
+
+plt.scatter(life_expectancy, gdp)
+plt.xlabel('Life Expectancy')
+plt.ylabel('GDP Per Capita')
+
+```
+

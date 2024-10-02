@@ -1,0 +1,11 @@
+---
+title: "Home"
+---
+
+This is the home page. The gapminder dataset shows the life expectancy, GDP per capita, and population for 142 countries.
+
+To learn about life expectancy and GDP per capita, visit: [Life Expectancy and GDP Per Capita](life-gdp.qmd)
+
+To learn about life expectancy and population, visit: [Life Expectancy and Population](life-population.qmd)
+
+To see the country analysis, vist: [Country Analysis](country.qmd)
